@@ -1,0 +1,30 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+   
+   <h2>This is my landing page</h2>
+
+   {% load static %}
+
+   <a href="{% static 'portfolio/NtobekoMthembu.pdf' %}">Resume</a>
+
+
+   </br>
+   <a href="{% url 'blog:All_blogs' %}">Blog</a>
+
+   <img src="{% static 'portfolio/pictures/KF_i30_N_MY25_758x540_02.jpg'%}">
+
+   {% for project in Project %}
+
+   <h3>{{ project.tittle }}</h3>
+   <p>{{ project.description }}</p>
+   <img src="{{ project.image.url}}">
+   {% if project.url %}
+   </br><a href="{{ project.url}}">Link</a>
+   {% endif %}
+
+   {% endfor %}
+
+
+{% endblock %}
+

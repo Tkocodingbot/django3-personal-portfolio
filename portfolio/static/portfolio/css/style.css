@@ -1,0 +1,17 @@
+/*General*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:sans-serif;
+}
+
+Html{
+    scroll-behavior: smooth;
+
+}
+navbar{
+    background-color: aqua;
+}
