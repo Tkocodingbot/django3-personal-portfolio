@@ -41,7 +41,7 @@ a{
 
 }
 a:hover{
-    color: aqua;
+    color: blue;
     text-underline-offset: 2rem;
 }
 
